@@ -1,0 +1,61 @@
+student_id,attendance,assignment_score,internal_marks,participation,previous_result
+S001,95.5,92.1,94.0,9.1,Excellent
+S002,91.2,88.5,90.5,8.5,Excellent
+S003,75.0,78.2,76.5,6.5,Good
+S004,62.1,55.0,60.2,4.1,Needs Improvement
+S005,85.5,82.0,84.1,7.8,Good
+S006,98.0,95.5,96.2,9.5,Excellent
+S007,68.9,70.1,66.5,5.5,Average
+S008,55.4,48.9,52.1,3.2,Needs Improvement
+S009,89.1,85.0,88.2,8.1,Good
+S010,93.2,90.1,91.5,8.9,Excellent
+S011,72.5,75.0,71.0,6.1,Average
+S012,81.3,79.5,80.1,7.2,Good
+S013,96.0,94.2,95.3,9.3,Excellent
+S014,60.5,58.1,55.9,3.9,Needs Improvement
+S015,78.8,77.0,79.2,7.0,Good
+S016,94.5,91.3,92.8,9.0,Excellent
+S017,70.1,68.9,72.4,5.9,Average
+S018,83.4,81.2,82.5,7.5,Good
+S019,59.0,51.0,54.3,3.5,Needs Improvement
+S020,90.8,89.3,91.1,8.6,Excellent
+S021,76.2,74.5,75.8,6.7,Good
+S022,99.5,98.0,99.1,9.8,Excellent
+S023,65.3,62.1,64.8,5.1,Average
+S024,88.1,86.4,87.5,8.2,Good
+S025,92.7,90.5,93.2,8.8,Excellent
+S026,45.1,40.2,42.5,2.1,Needs Improvement
+S027,73.9,71.8,74.0,6.2,Average
+S028,86.7,84.1,85.3,7.9,Good
+S029,97.2,96.3,95.8,9.6,Excellent
+S030,61.8,59.3,61.1,4.3,Average
+S031,95.1,92.8,93.5,9.2,Excellent
+S032,80.5,78.1,81.2,7.3,Good
+S033,66.7,64.2,68.0,5.3,Average
+S034,51.2,45.8,49.9,2.8,Needs Improvement
+S035,84.9,83.0,84.2,7.7,Good
+S036,93.8,91.1,92.3,8.9,Excellent
+S037,71.4,69.5,70.8,5.8,Average
+S038,82.6,80.1,81.9,7.4,Good
+S039,96.5,95.0,96.1,9.4,Excellent
+S040,64.1,60.8,62.7,4.8,Average
+S041,77.3,75.9,76.8,6.8,Good
+S042,91.9,89.8,90.7,8.7,Excellent
+S043,58.3,53.4,56.1,3.7,Needs Improvement
+S044,87.2,85.5,86.3,8.0,Good
+S045,98.8,97.1,98.2,9.7,Excellent
+S046,69.5,67.2,70.0,5.7,Average
+S047,79.1,77.8,78.3,6.9,Good
+S048,90.3,88.1,89.5,8.4,Excellent
+S049,63.2,57.9,61.3,4.5,Needs Improvement
+S050,74.8,73.1,74.9,6.4,Average
+S051,92.1,89.4,91.8,8.8,Excellent
+S052,86.2,83.5,85.7,7.8,Good
+S053,53.7,48.1,51.6,3.0,Needs Improvement
+S054,70.8,68.2,71.5,5.6,Average
+S055,94.9,93.1,94.3,9.1,Excellent
+S056,81.8,79.2,82.4,7.3,Good
+S057,67.4,65.1,68.9,5.4,Average
+S058,95.8,94.5,95.2,9.3,Excellent
+S059,78.2,76.5,77.9,6.8,Good
+S060,50.1,44.3,47.8,2.5,Needs Improvement

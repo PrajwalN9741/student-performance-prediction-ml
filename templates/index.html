@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Student Performance Predictor</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      border-radius: 1rem;
+      border: none;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    .card-header {
+      background: linear-gradient(135deg, #4f46e5 0%, #6e45e2 100%);
+      border-bottom: none;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+    .form-label { font-weight: 600; color: #555; }
+    .form-control, .input-group-text { border-radius: 0.5rem; }
+    .form-control:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+    }
+    .btn-predict {
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      background: linear-gradient(135deg, #4f46e5 0%, #6e45e2 100%);
+      border: none;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+    }
+    .btn-predict:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    }
+    /* Style for the real-time feedback bar */
+    .profile-strength-bar .progress-bar {
+        transition: width 0.4s ease-in-out, background-color 0.4s ease;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card">
+          <div class="card-header text-white text-center py-3">
+            <h2 class="mb-0"><i class="bi bi-bar-chart-line-fill me-2"></i>Student Performance Predictor</h2>
+          </div>
+          <div class="card-body p-4 p-md-5">
+            <form action="/predict" method="post">
+              
+              <div class="mb-4">
+                <label for="attendance" class="form-label">Attendance (%)</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-person-check-fill text-primary"></i></span>
+                  <input id="attendance" name="attendance" type="number" class="form-control" min="0" max="100" step="0.1" required placeholder="e.g., 85.5">
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <label for="assignment_score" class="form-label">Assignment Score (0-100)</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-file-earmark-text-fill text-primary"></i></span>
+                  <input id="assignment_score" name="assignment_score" type="number" class="form-control" min="0" max="100" step="0.1" required placeholder="e.g., 92">
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="internal_marks" class="form-label">Internal Marks (0-100)</label>
+                <div class="input-group">
+                   <span class="input-group-text"><i class="bi bi-award-fill text-primary"></i></span>
+                   <input id="internal_marks" name="internal_marks" type="number" class="form-control" min="0" max="100" step="0.1" required placeholder="e.g., 78.2">
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <label for="participation" class="form-label d-flex justify-content-between">
+                  <span>Participation (0-10)</span>
+                  <span id="participationValue" class="fw-bold text-primary">5.0</span>
+                </label>
+                <input id="participation" name="participation" type="range" class="form-range" min="0" max="10" step="0.1" value="5" required>
+              </div>
+
+              <div class="mt-4">
+                  <label class="form-label">Profile Strength</label>
+                  <div class="progress profile-strength-bar" style="height: 20px;">
+                      <div id="profileStrength" class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Moderate</div>
+                  </div>
+              </div>
+
+              <div class="d-grid mt-5">
+                <button type="submit" class="btn btn-primary btn-predict">
+                  <i class="bi bi-lightning-charge-fill me-2"></i>Predict Performance
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll('input[type="number"], input[type="range"]');
+    const participationSlider = document.getElementById('participation');
+    const participationValueDisplay = document.getElementById('participationValue');
+    const profileStrengthBar = document.getElementById('profileStrength');
+
+    function updateProfileStrength() {
+        const attendance = parseFloat(document.getElementById('attendance').value) || 0;
+        const assignment = parseFloat(document.getElementById('assignment_score').value) || 0;
+        const internal = parseFloat(document.getElementById('internal_marks').value) || 0;
+        const participation = (parseFloat(participationSlider.value) || 0) * 10; // Scale participation to 100
+
+        // Calculate a weighted average
+        const totalScore = (attendance * 0.25) + (assignment * 0.30) + (internal * 0.30) + (participation * 0.15);
+        
+        let strengthLabel = 'Weak';
+        let barClass = 'bg-danger';
+
+        if (totalScore > 75) {
+            strengthLabel = 'Strong';
+            barClass = 'bg-success';
+        } else if (totalScore > 45) {
+            strengthLabel = 'Moderate';
+            barClass = 'bg-warning';
+        }
+
+        profileStrengthBar.style.width = totalScore + '%';
+        profileStrengthBar.textContent = strengthLabel;
+        profileStrengthBar.className = 'progress-bar ' + barClass;
+    }
+
+    // Event listener for all inputs
+    inputs.forEach(input => {
+        input.addEventListener('input', (event) => {
+            // Update participation value display specifically
+            if (event.target.id === 'participation') {
+                participationValueDisplay.textContent = parseFloat(event.target.value).toFixed(1);
+            }
+            updateProfileStrength();
+        });
+    });
+
+    // Initial calculation on page load
+    updateProfileStrength();
+  </script>
+
+</body>
+</html>
