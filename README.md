@@ -148,10 +148,11 @@ GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
 ## 📬 Contact
 
 * 📧 Email: *[prajwalrajn9@gmail.com](mailto:prajwalrajn9@gmail.com)*
-* 🔗 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/prajwal-n9741)
+* 🔗 LinkedIn: [prajwal-n9741](https://linkedin.com/in/prajwal-n9741)
 * 🌐 Portfolio / Website: [Portfolio_website.com](https://prajwaln9741.github.io/Portfolio_Web/)
 
 Feel free to reach out for collaboration, suggestions, or feedback!
+
 
 
 
