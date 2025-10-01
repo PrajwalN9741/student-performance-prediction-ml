@@ -1,4 +1,3 @@
-markdown
 # 🎓 Student Performance Prediction (ML Web App)
 
 A web application that uses machine learning to predict and analyze student academic performance.  
@@ -68,7 +67,7 @@ student-performance-prediction-ml/
    ```bash
    git clone https://github.com/PrajwalN9741/student-performance-prediction-ml.git
    cd student-performance-prediction-ml
-````
+
 
 2. Create a virtual environment
 
@@ -148,11 +147,12 @@ GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
 
 ## 📬 Contact
 
-* 📧 Email: *[your-email@example.com](mailto:your-email@example.com)*
-* 🔗 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-* 🌐 Portfolio / Website: [yourwebsite.com](https://yourwebsite.com)
+* 📧 Email: *[prajwalrajn9@gmail.com](mailto:prajwalrajn9@gmail.com)*
+* 🔗 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/prajwal-n9741)
+* 🌐 Portfolio / Website: [Portfolio_website.com](https://prajwaln9741.github.io/Portfolio_Web/)
 
 Feel free to reach out for collaboration, suggestions, or feedback!
+
 
 
 
