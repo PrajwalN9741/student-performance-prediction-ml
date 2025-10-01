@@ -145,13 +145,14 @@ GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
 
 ---
 
-## 📬 Contact
+### 📫 Connect with Me
 
-* 📧 Email: *[prajwalrajn9@gmail.com](mailto:prajwalrajn9@gmail.com)*
-* 🔗 LinkedIn: [prajwal-n9741](https://linkedin.com/in/prajwal-n9741)
-* 🌐 Portfolio / Website: [Portfolio_website.com](https://prajwaln9741.github.io/Portfolio_Web/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/prajwal-n9741)  
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white&style=for-the-badge)](https://www.instagram.com/_._ite_me_prajju.__)  
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:prajwalrajn9@gmail.com)  
+[![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white&style=for-the-badge)](https://github.com/PrajwalN9741)
 
-Feel free to reach out for collaboration, suggestions, or feedback!
+
 
 
 
