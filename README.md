@@ -1,4 +1,4 @@
-```markdown
+markdown
 # 🎓 Student Performance Prediction (ML Web App)
 
 A web application that uses machine learning to predict and analyze student academic performance.  
@@ -154,5 +154,5 @@ GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
 
 Feel free to reach out for collaboration, suggestions, or feedback!
 
-```
+
 
