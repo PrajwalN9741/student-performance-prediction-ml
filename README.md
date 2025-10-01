@@ -103,11 +103,11 @@ student-performance-prediction-ml/
 
 ### 1. Home / Dashboard
 
-![Home Screen](Screenshot 2025-10-01 192722.png)
+![Home Screen](./Screenshot 2025-10-01 192722.png)
 
 ### 2. Prediction Results
 
-![Results Screen](Screenshot 2025-10-01 192758.png)
+![Results Screen](./Screenshot 2025-10-01 192758.png)
 
 ---
 
@@ -152,6 +152,7 @@ GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
 * 🌐 Portfolio / Website: [Portfolio_website.com](https://prajwaln9741.github.io/Portfolio_Web/)
 
 Feel free to reach out for collaboration, suggestions, or feedback!
+
 
 
 
