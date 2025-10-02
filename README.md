@@ -143,7 +143,7 @@ Licensed under the **MIT License** — see the `LICENSE` file for details.
 **Prajwal N**
 **Praveen H N**
 GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
-GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
+GitHub: [Praveen0916](https://github.com/Praveen0916)
 
 ---
 
@@ -153,6 +153,7 @@ GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white&style=for-the-badge)](https://www.instagram.com/_._ite_me_prajju.__)  
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:prajwalrajn9@gmail.com)  
 [![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white&style=for-the-badge)](https://github.com/PrajwalN9741)
+
 
 
 
